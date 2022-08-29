@@ -1,0 +1,53 @@
+Problem:
+Reverse a String   from: https://www.sololearn.com/learning/eom-project/1068/950
+
+
+Write a program to take a string as input and output its reverse.
+The given code takes a string as input and converts it into a char array, which contains letters of the string as its elements.
+
+Sample Input:
+hello there
+
+Sample Output:
+ereht olleh
+You can loop through the char array, starting from the end, using arr.length to get the size of the array.
+
+
+Solutions:
+
+import java.util.Scanner;
+
+public class Program {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String text = scanner.nextLine();
+		char[] arr = text.toCharArray();
+    
+		for (int i = arr.length; i>0; i--) {
+			System.out.println(arr[i-1]);
+		}
+		
+    for (int i = arr.length-1; i>=0; i--) {
+		 	System.out.println(text.charAt(i));
+		}
+    
+    
+		//your code goes here: Explanations
+    
+ 		for (int i = arr.length; i>0; i--) {
+      System.out.println(arr[i-1]);
+    }
+// you need i > 0  &&  (arr[i-1]) because arr is the length of the array and you're printing from the last character backwards
+
+// and for
+
+for (int i = arr.length-1; i>=0; i--) { 
+  System.out.println(text.charAt(i));
+}
+
+//You need i = arr.length-1  &&  i >= 0 because i goes all the way down to 0 and in that case you'll just be printing i
+
+//and arr[i-1] means the previous character in the array.
+		
+	}
+}
