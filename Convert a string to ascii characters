@@ -1,0 +1,106 @@
+Convert a string to ascii characters:
+
+
+Solution 1:
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        String s = in.nextLine();
+
+        int sum = 0;
+        for(int i = 0; i < s.length(); i++)
+        {
+            sum += (i * s.charAt(i));
+        }
+
+        System.out.println(sum);
+    }
+}
+
+
+Solution 2:
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        String s = in.nextLine();
+        s =  s.replaceAll("\\s+","");
+        char x;
+        int sum = 0;
+        for(int i = 0; i < s.length(); i++) {
+            x = s.charAt(i);
+            sum += x*i;
+        }
+        System.out.println(sum);
+    }
+}
+
+
+Solution 3:
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        String s = in.nextLine();
+
+
+
+        int sum = 0;
+        for(int i = 0; i < s.length(); i ++){
+            int result = ((s.charAt(i)) * i);
+
+            sum += result;
+
+            
+        }
+
+        System.out.println(sum);
+    }
+}
+
+
+Solution 4:
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        String s = in.nextLine();
+
+        int sum = 0;
+        for(int i = 0; i < s.length(); i ++){
+            sum += s.charAt(i)*i;
+        }
+
+        System.out.println(sum);
+    }
+}
