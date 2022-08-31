@@ -104,3 +104,52 @@ class Solution {
         System.out.println(sum);
     }
 }
+
+
+
+Solution 5:
+import java.util.*;
+
+import java.io.*;
+
+import java.math.*;
+
+
+
+/**
+
+ * Auto-generated code below aims at helping you parse
+
+ * the standard input according to the problem statement.
+
+ **/
+
+class Solution {
+
+
+
+    public static void main(String args[]) {
+
+        Scanner in = new Scanner(System.in);
+
+        String s = in.nextLine();
+
+        int sum = 0;
+
+
+
+        for(int i = 0; i < s.length(); i++){
+
+            sum += i*(int)s.charAt(i);
+
+        }
+
+
+
+        System.out.print(sum);
+
+    }
+
+
+
+}
