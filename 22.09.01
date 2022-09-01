@@ -1,0 +1,78 @@
+https://www.codingame.com/clashofcode/clash/26033224dc77a870dde6c85487a000a6f416200
+
+Solution 1:
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int X = in.nextInt();
+        int N = in.nextInt();
+        for (int i = 0; i < N; i++) {
+            int F = in.nextInt();
+            int T = in.nextInt();
+            String category = in.next();
+            if(X >= F && X <= T) System.out.println(category);
+        }
+    }
+}
+
+
+Solution 2:
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int X = in.nextInt();
+        int N = in.nextInt();
+        for (int i = 0; i < N; i++) {
+            int F = in.nextInt();
+            int T = in.nextInt();
+            String category = in.next();
+            if(X >= F && X <= T) {
+                System.out.print(category);
+            }
+        }
+    }
+}
+
+
+Solution 3:
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int X = in.nextInt();
+        int N = in.nextInt();
+        for (int i = 0; i < N; i++) {
+            int F = in.nextInt();
+            int T = in.nextInt();
+            String category = in.next();
+
+            if(X >= F && X <= T) {
+                System.out.println(category);
+           
+            }
+        
+        }
+    }
+}
